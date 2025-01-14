@@ -2,9 +2,11 @@
   "rules": {
     "declaration-block-no-duplicate-properties": true,
     "no-duplicate-selectors": true,
-    "declaration-property-case": "lowercase",
-    "value-keyword-case": "lowercase",
-    "selector-type-case": "lowercase",
+    "declaration-property-value-case": ["lower", {
+      "ignoreProperties": ["/^font$/", "/^text-align$/"]
+    }],
+    "value-keyword-case": "lower",
+    "selector-type-case": "lower",
     "block-no-empty": true
   }
 }
