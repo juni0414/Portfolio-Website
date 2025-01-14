@@ -1,0 +1,22 @@
+name:workflow
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v4
+      - name: Install HtmlHint
+        run: npm install --save-dev htmlhint 
+      - name: Install Stylelint
+        run: npm install --save-dev stylelint
+      - name: Lint Html files
+        run: npx htmlhint "**/*.html"
+      - name: Lint Css files
+        run: npx stylelint "**/*.css"
