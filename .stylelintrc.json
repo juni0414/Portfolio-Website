@@ -2,9 +2,9 @@
   "rules": {
     "declaration-block-no-duplicate-properties": true,
     "no-duplicate-selectors": true,
-    "function-name-case": "lowercase",
-    "value-keyword-case": "lowercase",
-    "selector-type-case": "lowercase",
+    "function-name-case": "lower",
+    "value-keyword-case": "lower",
+    "selector-type-case": "lower",
     "block-no-empty": true
   }
 }
